@@ -15,6 +15,10 @@ function calcular(){
     let plazoAnios = parseInt(document.getElementById("txtPlazo").value);
     let tasaInteres = parseFloat(document.getElementById("txtTasaInteres").value);
 
+    if (!validarFormulario(ingresosFloat, egresosFloat, monto, plazoAnios, tasaInteres)) {
+    return;
+}
+
 
     saldoDisponible=calcularDisponible(ingresosFloat,egresosFloat);
     total=document.getElementById("spnDisponible");

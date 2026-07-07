@@ -1,0 +1,17 @@
+prompt 1:
+   Quiero que le agregues las validaciones al proyecto, no cambies ni modifiques los IDs 
+   ya que los nececito para mi proyecto, estas serian las siguientes validaciones:
+   -que los ingresos sean de valor numérico 
+   -los ingresos deben ser mayor a cero
+   -los ingresos no pueden superar el millón de dólares
+   -los ingresos no pueden ser negativos 
+   -los egresos deben ser menor a los ingresos
+   .esto se ejecutará al presionar el botón calcular crédito
+   estos son los archivos correspondientes (html y js)
+
+prompt 2:
+   Agrégale más validaciones 
+   -el monto mínimo es de 100 dólares y el máximo es de 100,000 
+   -el plazo mínimo es de un año 
+   -el plazo máximo es de 30 años 
+   -la tasa mínima es del 1% y la máxima del 100%

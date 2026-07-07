@@ -23,14 +23,14 @@ body{
 
 .container{
 
-    width:100%;
-    max-width:470px;
+    width:200%;
+    max-width:670px;
 
     background:rgba(208, 208, 208, 0.96);
 
     border-radius:22px;
 
-    padding:35px;
+    padding:70px;
 
     backdrop-filter:blur(6px);
 
@@ -54,9 +54,9 @@ h1{
 
     color:#243524;
 
-    font-size:2rem;
+    font-size:4rem;
 
-    margin-bottom:30px;
+    margin-bottom:40px;
 }
 h3{
 

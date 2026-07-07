@@ -4,75 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de Crédito</title>
-
     <link rel="stylesheet" href="simulador.css">
 
     <script src="funciones.js" defer></script>
     <script src="simulador.js" defer></script>
 </head>
 
-<body>
-
 <div class="container">
-
-    <img src="CF6884D6-C3BB-4763-86E1-94F449AE0FE2.PNG" class="logo" alt="GITcash">
-
-    <h3>autor: Daniel Orrala</h3>
-    <h1>GITcash</h1>
+    <img src="CF6884D6-C3BB-4763-86E1-94F449AE0FE2.PNG" alt="Logo GITcash" class="logo">
+    <h1>GIT CASH</h1>
+    <p class="autor">Creado por: Daniel Orrala</p>
 
     <h2>Datos financieros</h2>
 
-    <label for="txtIngresos">Ingresos</label>
-    <input type="text" id="txtIngresos">
+    <label for="txtIngresos">Ingresos:</label>
+    <input type="number" id="txtIngresos" placeholder="Ej: 2000">
+    <span class="error-msg" id="err_txtIngresos"></span>
 
-    <label for="txtEgresos">Egresos</label>
-    <input type="text" id="txtEgresos">
+    <label for="txtEgresos">Egresos:</label>
+    <input type="number" id="txtEgresos" placeholder="Ej: 800">
+    <span class="error-msg" id="err_txtEgresos"></span>
 
-    <p>Disponible:
-        <span id="spnDisponible"></span>
-    </p>
-
-    <p>Capacidad de pago mensual:
-        <span id="spnCapacidadPago"></span>
-    </p>
+    <div class="resultado-row">
+        <p>Disponible: <span id="spnDisponible" class="valor">—</span></p>
+        <p>Capacidad de pago mensual: <span id="spnCapacidadPago" class="valor">—</span></p>
+    </div>
 
     <h2>Solicitud de crédito</h2>
 
-    <label for="txtMonto">Monto</label>
-    <input type="text" id="txtMonto">
+    <label for="txtMonto">Monto ($ 100 – $ 100,000):</label>
+    <input type="number" id="txtMonto" placeholder="Ej: 5000">
+    <span class="error-msg" id="err_txtMonto"></span>
 
-    <label for="txtPlazo">Plazo en años</label>
-    <input type="text" id="txtPlazo">
+    <label for="txtPlazo">Plazo en años (1 – 30):</label>
+    <input type="number" id="txtPlazo" placeholder="Ej: 3">
+    <span class="error-msg" id="err_txtPlazo"></span>
 
-    <label for="txtTasaInteres">Tasa de interés</label>
-    <input type="text" id="txtTasaInteres">
+    <label for="txtTasaInteres">Tasa de interés % (1 – 100):</label>
+    <input type="number" id="txtTasaInteres" placeholder="Ej: 12">
+    <span class="error-msg" id="err_txtTasaInteres"></span>
 
-    <p>Interés a pagar:
-        <span id="spnInteresPagar"></span>
-    </p>
+    <div class="resultado-row">
+        <p>Interés a pagar: <span id="spnInteresPagar" class="valor">—</span></p>
+        <p>Total préstamo: <span id="spnTotalPrestamo" class="valor">—</span></p>
+        <p>Cuota mensual: <span id="spnCuotaMensual" class="valor">—</span></p>
+    </div>
 
-    <p>Total préstamo:
-        <span id="spnTotalPrestamo"></span>
-    </p>
-
-    <p>Cuota mensual:
-        <span id="spnCuotaMensual"></span>
-    </p>
-
-    <p>Estado de crédito:
-        <span id="spnEstadoCredito">ANALIZANDO...</span>
-    </p>
+    <p class="estado-label">Estado de crédito: <span id="spnEstadoCredito">ANALIZANDO...</span></p>
 
     <div class="buttons">
-
-        <button onclick="calcular()" id="btnCalcularCredito">
-            Calcular Crédito
-        </button>
-
-        <button onclick="reiniciar()" id="btnReiniciar">
-            Reiniciar
-        </button>
-
+        <button onclick="calcular()" id="btnCalcularCredito">Calcular Crédito</button>
+        <button onclick="reiniciar()" id="btnReiniciar">Reiniciar</button>
     </div>
 
 </div>
