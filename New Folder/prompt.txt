@@ -1,0 +1,24 @@
+prompt 1:
+  .logo
+    .Crea un logo con la imagen que te pasé y que sea de un fondo verde grisáceo y el símbolo de dólar 
+    sea tipo glass. En cuanto a las letras, dale un poquito más de estética y que el logo sea 
+    minimalista y bien hecho.
+    .Ok, pero quería que lo hicieras más profesional. En cuanto alsímbolo del logo, el 
+     dólar, el círculo, todo fuera más estético y con formas bien hechas, pero que 
+     siga manteniendo un estilo glass, pero que se vea profesional y no hecho por un niño. En cuanto a 
+     las letras, dame un poquito más de diseño más minimalista, como para un banco, una institución bancaria.
+
+prompr 2:
+   Quiero que hagas esta imagen un archivo PNG. Solamente necesito el logo redondo con el símbolo dólar en medio
+    y las palabras. Lo que está en el fondo, quítalo para que sea un archivo PNG.
+
+prompt 3:
+   Actúa como diseñador gráfico experto.  
+   Quiero que le des a mi página Un diseño más empresarial y profesional quiero que uses la primera imagen como 
+   fondo y la segunda imagen(la que tiene un signo de bolar y dice GITcash) como el logo quiero que logo esté 
+   dentro del contenedor pero en la parte la parte de arriba arriba de la palabra simulador de crédito tambien 
+   necesito que hagas mi página responsive, que se vea perfecta en celulares y tablets. Reglas importantes: solo 
+   HTML y CSS. No uses librerías externas como (Bootstrap o Tailwind.)  
+   No toques los IDs, no cambies ni borres ningún ID de los componentes, los necesito para mi código.
+
+pd: le fui cambiamdo colores, letras y botones manualmente, poque el diseño ya era bastante bueno
