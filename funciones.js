@@ -6,7 +6,7 @@ return valorDisponible <0 ? 0 :valorDisponible;
 
 function calcularCapacidadPago(valorDisponible){
 let resultado;
-resultado = valorDisponible /2;
+resultado = valorDisponible *0.30;
 return resultado;
 }
 
